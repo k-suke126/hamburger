@@ -1,0 +1,15 @@
+.l-sidebar {
+    min-width: 257px;
+    height: 100%;
+    z-index: 100;
+    @include mq(tb) {
+        position: absolute;
+        left: 100%;
+        transition-duration: 0.3s;
+        &.show {
+          position: absolute;
+          left: calc(100% - 257px);
+          transition-duration: 0.3s;
+        }
+      }
+}

@@ -1,0 +1,17 @@
+.p-footer {
+    height: 100%;
+    color: #ffffff;
+    background-image: url(../images/front-page/footer-background.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: mplus-1m-light;
+    &__naviMenuItem > a {
+        color: #ffffff;
+    }
+    &__naviMenu {
+        display: flex;
+        justify-content: center;
+    }
+}

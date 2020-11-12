@@ -1,0 +1,13 @@
+.u-pc-none {
+    display: none;
+    @include mq(tb) {
+      display: block;
+    }
+}
+
+.u-tb-sp-none {
+  display: block;
+  @include mq(tb) {
+    display: none;
+  }
+}

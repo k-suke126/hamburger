@@ -1,0 +1,26 @@
+.c-selectCard {
+    text-align: center;
+    &__container {
+        display: inline-block;
+        height: 100%;
+        width: 90%;
+        text-align: left;
+        position: relative;
+    }
+    &__textBox {
+        position: absolute;
+        bottom: 0;
+    }
+    &__text {
+        margin-bottom: 20px;
+        > dt {
+           padding: 15px 15px 20px 15px;
+        }
+        > dd {
+           padding: 0px 15px 15px 15px;
+        }
+    }
+    &__title {
+        padding-top: 10px;
+    }
+}

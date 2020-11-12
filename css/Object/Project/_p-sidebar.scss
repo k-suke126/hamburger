@@ -1,0 +1,66 @@
+.p-sidebar  {
+    background-color: #F2EDE9;
+    height: 100%;
+    width: 100%;
+    font-family: mplus-1m-light;
+    position: relative;
+    &__button {
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        &::before,
+        &::after {
+            content: "";
+            width: 30px;
+            height: 4px;
+            display: block;
+            background: #707070;
+            position: absolute;
+            left: calc(50% - 15px);
+        }
+        &::before {
+            top: 42%;
+            transform: rotate(45deg);
+        }
+        &::after {
+            bottom: 42%;
+            transform: rotate(135deg);
+        }
+    }
+    &__naviMenu {
+        padding-top: 55px;
+        padding-left: 30px;
+    }
+    &__title {
+        font-family: roboto;
+        font-size: 2.4rem;
+        color: #707070;
+        margin-bottom: 55px;
+    }
+    a {
+        display: inline-block;
+        color: #707070;
+    }
+}
+
+.p-naviMenu {
+    font-size: 1.7rem; 
+    > .p-naviMenu__item {
+            margin-bottom: 50px;    
+        > a {
+            margin-bottom: 30px;        
+        }
+    }
+}
+
+.p-childNaviMenu {
+    font-size: 1.3rem;
+    > .p-childNaviMenu__item > a {
+        margin-bottom: 15px;
+        margin-left: 15px;        
+    }
+}

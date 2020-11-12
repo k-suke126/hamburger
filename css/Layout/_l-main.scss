@@ -1,0 +1,9 @@
+.l-main {
+    height: 1838px;
+    @include mq(tb) {
+        height: 1350px;
+      }
+    @include mq(sp) {
+        height: 2000px;
+    }
+}
