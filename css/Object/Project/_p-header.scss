@@ -22,7 +22,32 @@
           }
     }
     &__searchForm {
+        width: 300px;
         margin-right: 21px;
+        @include mq(tb) {
+            margin-right: 0;
+          }
+        > .c-searchForm__bar {
+            height: 30px;
+            width: 200px;
+            border-color:  #707070;
+        }
+        > .c-searchForm__button {
+            height: 30px;
+            width: 90px;
+            background: linear-gradient(#F2EDE9,#DED8D3);
+            color: #707070;
+            font-size: 1.1rem;
+            font-weight: lighter;
+            border-color:  #707070;
+        }
+        > .c-searchForm__glass {
+            height: 30px;
+            width: 50px;
+            color: #707070;
+            background-color: #fff;
+            border-color:  #707070;
+        }
     }
     &__menuButton {
         font-family: roboto;
